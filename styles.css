@@ -1,0 +1,645 @@
+body {
+    background-image: url('assets/background.svg');
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-links a.active, .nav-links a:hover {
+    color: orange;
+}
+
+.download-button a {
+    text-decoration: none;
+    color: white;
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#hero {
+    display: grid;
+    grid-template-areas: 
+        "text image1"
+        "image2 image2";
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 50px;
+}
+
+.hero-text {
+    grid-area: text;
+}
+
+.hero-image-1 img,
+.hero-image-2 img {
+    max-width: 100%; 
+    height: auto; 
+}
+.hero-image-1 {
+    grid-area: image1;
+
+}
+
+.hero-image-2 {
+    grid-area: image2;
+
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+}
+
+.buttons {
+    margin-top: 10px;
+    display: flex; 
+    align-items: baseline; 
+}
+
+.buttons a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+} 
+
+.buttons a.watch-video {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 50px;
+}
+
+.features-text {
+    padding-left: 20px;
+}
+
+.features-text h1 {
+    color: black;
+    font-size: 2em;
+}
+
+.features-text h2 {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.features-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features-text li {
+    margin-bottom: 20px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+}
+
+.feature-item img {
+    margin-right: 10px;
+    max-width: 50px;
+}
+
+.features-image {
+    display: flex;
+    justify-content: center;
+}
+
+.features-image img {
+    max-width: 100%;
+}
+
+#get-started {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 50px;
+    background: url('assets/getstartedbg.svg') no-repeat center center/cover;
+    color: white;
+}
+
+#get-started .content {
+    max-width: 500px;
+}
+
+#get-started h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#get-started p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.download-app {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.download-app img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.download-app button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download-app button img {
+    width: 15px;
+    vertical-align: middle;
+}
+
+#get-started .image img {
+    max-width: 100%;
+}
+
+#advantages {
+    text-align: center;
+    padding: 50px;
+    background-color: transparent;
+}
+
+.advantage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: transparent; 
+    border: none; 
+}
+
+.advantage-details {
+    max-width: 500px;
+    margin: 0 20px;
+    text-align: left;
+}
+
+.advantage-details p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.advantage-details .advantage-logo {
+    width: auto;
+    height: 1.5em;
+    vertical-align: middle; 
+    margin-right: 10px;
+    margin-bottom: 5px; 
+}
+
+.advantage-details h3 {
+    font-size: 1.5em;
+    margin-top: 5px; 
+    margin-bottom: 0;
+    color: #000000;
+}
+
+.app-screenshot {
+    max-width: 500px;
+    margin: 0 20px;
+}
+
+.app-screenshot img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo-heading {
+    display: flex; 
+    align-items: center; 
+}
+
+#testimonials {
+    text-align: center;
+    padding: 50px;
+}
+
+#testimonials h3 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #333;
+}
+
+#testimonials h2 {
+    font-size: 2em;
+    margin: 10px 0 40px;
+    font-weight: bold;
+    color: #333;
+}
+
+.testimonial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testimonial-image {
+    max-width: 500px; 
+    margin-right: 20px;
+}
+
+.testimonial-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.testimonial-details {
+    max-width: 500px;
+    text-align: left;
+}
+
+.testimonial-details h4 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    font-weight: 600;
+    color: #ff6a00; 
+}
+
+.testimonial-details p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.testimonial-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.nav-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.nav-button.active {
+    transform: scale(1.2);
+}
+
+.testimonial-user {
+    text-align: center;
+}
+
+#user-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+
+/* Reset and base styles */
+.pricing-section {
+  background-color: transparent; /* Transparent background color */
+  font-family: "Source Sans Pro", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pricing-section h1,
+.pricing-section p {
+  text-align: center;
+}
+
+.pricing-section .pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pricing-section .plan {
+  background-color: #fff;
+  padding: 2.5rem;
+  margin: 12px;
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.pricing-section .plan h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.pricing-section .plan .price {
+  margin-bottom: 1rem;
+  font-size: 30px;
+}
+
+.pricing-section .plan ul.features {
+  list-style-type: none;
+  text-align: left;
+}
+
+.pricing-section .plan ul.features li {
+  margin: 8px;
+}
+
+.pricing-section .plan ul.features li .fas {
+  margin-right: 4px;
+}
+
+.pricing-section .plan ul.features li .fa-check-circle {
+  color: #ffae00;
+}
+
+.pricing-section .plan ul.features li .fa-times-circle {
+  color: #ffa600;
+}
+
+.pricing-section .plan button {
+  border: none;
+  width: 100%;
+  padding: 12px 35px;
+  margin-top: 1rem;
+  background-color: #ffc400;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.pricing-section .plan.popular {
+  border: 2px solid #ff8800;
+  position: relative;
+  transform: scale(1.08);
+}
+
+.pricing-section .plan.popular span {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffa600;
+  color: #fff;
+  padding: 4px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.pricing-section .plan:hover {
+  box-shadow: 5px 7px 67px -28px rgba(0, 0, 0, 0.37);
+}
+
+#faq {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#faq h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.faq-box {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-box.white-bg {
+    background-color: #fff;
+}
+
+.faq-box.red-bg {
+    background-color: #ff6a00;
+}
+
+.faq-box h3 {
+    font-size: 1.5em;
+    margin-top: 0;
+    color: #000000;
+}
+
+.faq-box p {
+    font-size: 1.2em;
+    color: #000000;
+}
+
+.content h2 {
+    font-size: 3.3em; 
+}
+
+.content p {
+    font-size: 2.1em; 
+}
+
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#contact > div {
+    margin: 20px;
+    flex: 1 1 200px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.newsletter button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: orange;
+    color: white;
+}
+
+.download-app {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.download-app img {
+    width: 24px;
+    height: 24px;
+}
+
+
+#contact a {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+/* Adding animations */
+.btn, .download-button a, .buttons a {
+    transition: all 0.3s ease;
+}
+
+.btn:hover, .download-button a:hover, .buttons a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.plan {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links a:hover {
+    color: orange;
+}
+
+.watch-video:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .gallery-item img:hover {
+    transform: scale(1.1);
+  }
+
+  .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lightbox-content {
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    max-height: 90%;
+  }
+
+  .lightbox-content img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+    font-size: 3rem;
+    cursor: pointer;
+  }
